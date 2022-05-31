@@ -33,7 +33,7 @@
       }
       body {
         min-height: 100vh;
-        min-width: 100vh;
+        min-width: 1440px;
         font-family: "Josefin Sans", sans-serif;
       }
       .container {
@@ -120,6 +120,26 @@
         margin-top: 1rem;
         color: red;
         opacity: 0;
+      }
+
+      @media screen and (max-width: 375px) {
+        body {
+          min-height: 100vh;
+          min-width: 380px;
+        }
+        .container {
+          padding: 0 2rem;
+        }
+        #email {
+          margin-bottom: 1rem;
+        }
+        #btn,
+        #email {
+          width: 100%;
+        }
+        .body img {
+          width: 90%;
+        }
       }
     </style>
   </head>
