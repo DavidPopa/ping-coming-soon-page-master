@@ -103,6 +103,14 @@
         margin: 1rem;
         color: hsl(223, 87%, 63%);
         font-size: 1.4rem;
+        transition: 0.3s all;
+      }
+      #fb:hover,
+      #tw:hover,
+      #insta:hover {
+        background-color: hsl(223, 87%, 63%);
+        color: #fff;
+        border-radius: 50%;
       }
       .footer p {
         color: hsl(223, 100%, 88%);
@@ -152,9 +160,9 @@
       </div>
       <footer class="footer">
         <div class="social-media">
-          <ion-icon name="logo-facebook"></ion-icon>
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon id="fb" name="logo-facebook"></ion-icon>
+          <ion-icon id="tw" name="logo-twitter"></ion-icon>
+          <ion-icon id="insta" name="logo-instagram"></ion-icon>
         </div>
         <p>&copy; Copyright Ping. All rights reserved.</p>
       </footer>
